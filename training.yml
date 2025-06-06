@@ -1,0 +1,24 @@
+###############
+# GPU: [4,5,6,7]
+# GPU: [0,1,2]
+# GPU: [5,6,7,8]
+GPU: [5]
+
+VERBOSE: True
+
+# Optimization arguments.
+OPTIM:
+  BATCH_SIZE: 12
+  NUM_EPOCHS: 300
+  LR_INITIAL: 1e-3
+
+TRAINING:
+
+  # TRAIN_PS: 256
+  # VAL_PS: 256
+  RESUME: False
+
+  TRAIN_DIR_KCL: '/data/ct/train'           # path to training data. This folder is divided into two subfolders, one named 'IN' and the other named 'GT'.
+  VAL_DIR_KCL: '/data/ct/valid'              # path to validation data. This folder is divided into two subfolders, one named 'IN' and the other named 'GT'.
+  SAVE_DIR: '/saved_models/CDDNet'    # path to save models
+
